@@ -12,7 +12,7 @@ const app = express();
 const dbPath = path.join(__dirname, "database.db");
 const blogs = require("./database");
 app.use(bodyParser.json());
-app.use(cors({ origin: `http://localhost:${port}` }));
+app.use(cors({ origin: '*' }));
 
 let db = null;
 
